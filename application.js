@@ -1,11 +1,13 @@
 
 counter = 0
 miscounter = 0
+
 addsquares=function(){
-   i=0
+   i = 0
    var v = $('#howmany').val()
 
    for(i= 0; i<v; i+=1){
+
      min = Math.ceil(1);
      max = Math.floor(2);
      shape_style = Math.floor(Math.random() * (max - min + 1) + min);
@@ -23,15 +25,14 @@ addsquares=function(){
       r.click(removal)
     }
 
-     else{
+    else{
       x = Math.random() * 180;
       y = Math.random() * 180;
-      r = paper.circle(x, y, 10);
+      r = paper.ellipse(x, y, 40, 20 )
       filled = {'fill': '#f04'};
-
       r.attr(filled)
-      rotate= Math.random()*1440-720
-      turning={'transform': 'r'+rotate}
+      rotate = Math.random()*1440-720
+      turning = {'transform': 'r'+rotate}
       r.animate(turning,4000, misses)
       r.click(removal)
     }
