@@ -2,6 +2,7 @@
 let counter = 0
 let miscounter = 0
 let colours = ['#f1d376', '#df87df', '#22c66a', '#22a8c6', '#db6bf7']
+let level = 1
 
 addsquares=function(){
   i = 0;
@@ -9,6 +10,7 @@ addsquares=function(){
   if (v == ""){
     alert("Please enter a value greater than 0");
   }
+
 
   else if (v == 0){
     alert ("To play the game, you must enter a number greater than 0");
