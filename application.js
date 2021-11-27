@@ -1,8 +1,7 @@
 
-let counter = 0;
-let miscounter = 0;
-let level = 1;
-let colours = ['#f1d376', '#df87df', '#22c66a', '#22a8c6', '#db6bf7'];
+let counter = 0
+let miscounter = 0
+let colours = ['#f1d376', '#df87df', '#22c66a', '#22a8c6', '#db6bf7']
 
 addsquares=function(){
   i = 0;
@@ -16,7 +15,6 @@ addsquares=function(){
   }
 
   else if (v <= 50){
-
     for(i = 0; i < v; i+=1){
       random_colour = Math.floor(Math.random() * (4 - 0 + 1) + 0);
       min = Math.ceil(1);
@@ -24,8 +22,8 @@ addsquares=function(){
       shape_style = Math.floor(Math.random() * (max - min + 1) + min);
 
       if(shape_style == 1){
-        x = Math.floor(Math.random() * (460 - 30 + 1) + 30);
-        y = Math.floor(Math.random() * (460 - 30 + 1) + 30);
+        x = Math.floor(Math.random() * (460 - 30 + 1) + 30)
+        y = Math.floor(Math.random() * (460 - 30 + 1) + 30)
         r = paper.rect(x, y, 20, 20);
         filled = {'fill': colours[random_colour]};
 
@@ -37,8 +35,8 @@ addsquares=function(){
       }
 
       else{
-        x = Math.floor(Math.random() * (460 - 30 + 1) + 30);
-        y = Math.floor(Math.random() * (460 - 30 + 1) + 30);
+        x = Math.floor(Math.random() * (460 - 30 + 1) + 30)
+        y = Math.floor(Math.random() * (460 - 30 + 1) + 30)
         r = paper.ellipse(x, y, 40, 20)
         filled = {'fill': colours[random_colour]};
         r.attr(filled);
